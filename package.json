@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint:fix": "standard --fix",
+    "build:esm": "tsc -p ./esm/tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
     "chokidar": "^3.5.2"
   },
   "devDependencies": {
-    "standard": "^13.1.0"
+    "@types/electron": "^1.6.10",
+    "standard": "^13.1.0",
+    "typescript": "^5.4.5"
   },
   "types": "./types/main.d.ts"
 }
